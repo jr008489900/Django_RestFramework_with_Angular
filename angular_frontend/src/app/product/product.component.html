@@ -1,0 +1,20 @@
+<h2>Product List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of datalist">
+          <td>{{ product.name }}</td>
+          <td>{{ product.description }}</td>
+          <td>{{ product.price }}</td>
+          <td>{{ product.created_at }}</td>
+        </tr>
+      </tbody>
+    </table>
+<button (click)="createProduct()">Create Product</button>

@@ -1,0 +1,36 @@
+<header class="flex items-center justify-between bg-gray-200 py-4 px-8">
+  <div class="relative">
+    <button id="menu-btn" class="flex items-center justify-between w-full">
+      <span class="mr-2">Menu</span>
+      <svg class="fill-current h-4 w-4" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 3.75C0 3.33579 0.335786 3 0.75 3H19.25C19.6642 3 20 3.33579 20 3.75C20 4.16421 19.6642 4.5 19.25 4.5H0.75C0.335786 4.5 0 4.16421 0 3.75ZM0.75 8.25H19.25C19.6642 8.25 20 8.58579 20 9C20 9.41421 19.6642 9.75 19.25 9.75H0.75C0.335786 9.75 0 9.41421 0 9C0 8.58579 0.335786 8.25 0.75 8.25ZM19.25 14.25H0.75C0.335786 14.25 0 14.5858 0 15C0 15.4142 0.335786 15.75 0.75 15.75H19.25C19.6642 15.75 20 15.4142 20 15C20 14.5858 19.6642 14.25 19.25 14.25Z"/>
+      </svg>
+    </button>
+    <div id="menu" class="hidden absolute right-0 mt-2 py-2 w-48 bg-white rounded-lg shadow-xl ">
+      <a class="block px-4 py-2 hover:bg-gray-200" href="/">Home</a>
+      <a class="block px-4 py-2 hover:bg-gray-200" href="/about">About</a>
+      <a class="block px-4 py-2 hover:bg-gray-200" href="/contact">Contact</a>
+      <a class="block px-4 py-2 hover:bg-gray-200" href="/userdata">Userdata</a>
+    </div>
+  </div>
+  <h1 class="text-xl font-bold">Welcome to my app</h1>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+
+  var flag=1;
+  menuBtn.addEventListener("click", () => {
+    if(flag==0)
+    {
+      menu.classList.toggle("hidden");
+      flag=1;
+    }
+    else
+    {
+      menu.classList.toggle("block");
+      flag=0;
+    }
+  });
+</script>

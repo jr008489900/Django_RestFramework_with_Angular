@@ -1,0 +1,23 @@
+<!-- <ul *ngIf="data">
+    <li *ngFor="let item of data">{{ item.id }} - {{ item.office }} {{ item.level }} </li>
+  </ul>
+  <p *ngIf="!data">正在加載...</p> -->
+  <h2>表單填寫</h2>
+  <div >
+    <label>
+      姓名：
+      <input type="text" [(ngModel)]="model.name" name="name" required>
+    </label>
+    <br>
+    <label>
+      電子郵件：
+      <input type="email" [(ngModel)]="model.email" name="email" required>
+    </label>
+    <br>
+    <label #phoneInput>
+      電話號碼：
+      <input type="tel" [(ngModel)]="model.phone" name="phone" required >
+    </label>
+    <br>
+    <button  (click)="on_submit()">提交</button>
+  </div>
