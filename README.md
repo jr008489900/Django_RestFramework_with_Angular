@@ -1,1 +1,2 @@
 # Django_RestFramework_with_Angular
+此專案是使用Djano RestFramework API 搭配 前端Angular 對接資料的練習範例
