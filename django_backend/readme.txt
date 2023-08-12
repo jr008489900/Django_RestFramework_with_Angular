@@ -1,0 +1,1 @@
+use "python manage.py runserver" to start the backend server.
